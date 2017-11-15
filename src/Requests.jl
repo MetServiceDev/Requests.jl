@@ -142,7 +142,7 @@ function mimetype(r::Response)
         ct = split(headers(r)["Content-Type"], ";")[1]
         return Nullable(ct)
     else
-        return Nullable{Compat.UTF8String}()
+        return Nullable{String}()
     end
 end
 
@@ -156,7 +156,7 @@ function contentdisposition(r::Response)
             end
         end
     end
-    return Nullable{Compat.UTF8String}()
+    return Nullable{String}()
 end
 
 """
