@@ -1,5 +1,5 @@
 __precompile__()
-module Requests
+module RequestsMSR
 
 export URI, FileParam, headers, cookies, statuscode, post, requestfor
 export get_streaming, post_streaming, write_chunked
